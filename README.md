@@ -31,4 +31,4 @@ Then, in case you're new to virtual environments, you can exit the environment b
 Things to do:
 * Map phonemes to mouth shapes.
 * Stitch frames together for new video
-* Abstract out the code so different processes have their own scripts
+* Abstract out the code so different processes have their own scripts (I'm quite aware that it is poorly structured right now)
