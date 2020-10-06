@@ -10,13 +10,17 @@ In order to use this, you'll need to install the [Gentle Forced Aligner](https:/
 
 First, you'll need to use pip to install all of the dependencies (it might help to make a virtual environment too):
 <code>cd ~/your/path/qcc</code>
+
 <code>python3 -m venv [name of environment]</code>
+
 <code>source [name of environment]/bin/activate</code>
+
 <code>pip3 install -r requirements.txt</code>
 
 Then start Gentle (either with Docker or simply by running the app installed from the .dmg).
 
 Then run main.py:
+
 <code>python3 main.py [name of video] [neckless, or whatever your character is called]</code>
 
 Things to do:
