@@ -171,3 +171,20 @@ for n in range(video.reader.nframes - 1):
     img02.close()
     img03.close()
     img04.close()
+
+
+def get_frame_files(n):
+    lis = []
+    for i in range(n - 1):
+        lis.append(os.getcwd() + "/frames/frame{:06d}.jpeg".format(i))
+    return lis
+
+
+audio_ = e.AudioFileClip(sys.argv[1] + ".wav")
+clip = e.ImageSequenceClip(get_frame_files(video.reader.nframes), fps=fps)
+clip.set_audio(audio)
+# clip.write_videofile(sys.argv[1] + "_final.mp4")
+clip.write_videofile("fnl.mp4", audio=audio_)
+
+video.close()
+clip.close()
